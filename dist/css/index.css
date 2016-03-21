@@ -1,0 +1,11 @@
+* {
+  margin: 0; }
+
+body {
+  font-size: 14px;
+  background: red; }
+  body div {
+    background: blue; }
+  body p {
+    margin: 10px;
+    display: flex; }

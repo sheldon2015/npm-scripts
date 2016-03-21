@@ -1,1 +1,1 @@
-alert("111111111111111111111111111111111111111111");
+function People(e,o){this.name=e;this.age=o}var person=new People("tom",21);console.log(person.name,person.age);
