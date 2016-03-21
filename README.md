@@ -1,0 +1,2 @@
+windows 下的好多命令与linux有很大区别，比如mkdir；
+在linux下可以一次创建多级目录，windows下则不行
