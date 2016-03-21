@@ -77,8 +77,7 @@ var cf = {
         'Safari >= 6'
     ]
 };
-// ==============================
-// style
+
 gulp.task('sass', ['cleanCss'], function() {
     return sass(cf.src.file.scss, { sourcemap: true })
         .on('error', sass.logError)
