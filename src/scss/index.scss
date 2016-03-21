@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    background: red;
+
+    div {
+        background: blue;
+    }
+
+    p {
+        margin: 10px;
+        display: flex;
+    }
+}

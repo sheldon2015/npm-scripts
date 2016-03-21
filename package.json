@@ -1,0 +1,35 @@
+{
+    "name": "npm_scripts_project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --output-style  expanded -o dist/css src/scss",
+        "scss-help": "node-sass --help",
+        "scss-post": "node-sass  --watch  -o dist/css  src/scss",
+        "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+        "autoprefixer-help": "postcss -h",
+        "eslint-init": "eslint --init",
+        "eslint-help": "eslint --help",
+        "eslint": "eslint src/js",
+        "uglify--help": "uglifyjs2  --help",
+        "uglify": "uglifyjs2  src/js/index.js -m -o dist/js/app.js &&   uglifyjs2  src/js/index.1.js -m -o dist/js/app.1.js",
+        "imagemin": "imagemin src/img dist/img -p",
+        "icons": "svgo -f src/img/icon  && svg-sprite-generate -d src/img/icon -o dist/img/icon.svg"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^6.3.3",
+        "eslint": "^2.4.0",
+        "gulp": "^3.9.1",
+        "gulp.spritesmith": "^6.2.0",
+        "imagemin-cli": "^2.1.0",
+        "node-sass": "^3.4.2",
+        "postcss-cli": "^2.5.1",
+        "svg-sprite-generator": "0.0.7",
+        "svgo": "^0.6.2",
+        "uglify-js2": "^2.1.11"
+    }
+}
