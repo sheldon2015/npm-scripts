@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "scss": "node-sass --output-style  expanded -o dist/css src/scss",
-        "scss-help": "node-sass --help",
+        "scss": "node-sass --output-style  expanded -o dist/css src/scss  #编译scss",
+        "scss-help": "node-sass --help      #帮助",
         "scss-post": "node-sass  --watch  -o dist/css  src/scss",
         "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
         "autoprefixer-help": "postcss -h",
@@ -19,8 +19,8 @@
         "icons": "svgo -f src/img/icon  && svg-sprite-generate -d src/img/icon -o dist/img/icon.svg",
         "browser-sync": "browser-sync start --server --files  **",
         "watch:css": "onchange 'src/scss/*.scss' -- npm run scss",
-        "watch:all": "parallelshell  'npm run watch:css'  "
-       
+        "watch:all": "parallelshell  'npm run watch:css'  ",
+        "env": "env"
     },
     "author": "",
     "license": "ISC",
